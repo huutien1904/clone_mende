@@ -21,6 +21,7 @@
   </head>
   <body>
     <div class="container">
+      <!-- header -->
       <header class="header">
         <div class="header_section">
           <div class="header_logo">
@@ -122,7 +123,7 @@
                 <a href="" class="menu_link">TRANG CHỦ | HOME </a>
               </li>
               <li class="menu_item">
-                <a href="" class="menu_link"
+                <a href="" class="menu_link menu-show expland"
                   >BỘ SƯU TẬP | COLLECIONS
                   <i class="fas fa-angle-down menu_item-icon"></i>
                   <ul class="menu-item_list">
@@ -150,8 +151,25 @@
           </div>
         </div>
       </header>
+      <!-- end header -->
+      <!-- slider -->
+      <div class="slider-main">
+        <div class="slider-container">
+          <div class="slider">
+            <img src="./img/slideshow_3.jpg" alt="" id="lastclone" />
+            <img src="./img/slideshow_1.jpg" alt="" />
+            <img src="./img/slideshow_2.jpg" alt="" />
+            <img src="./img/slideshow_3.jpg" alt="" />
+            <img src="./img/slideshow_1.jpg" alt="" id="firstclone" />
+          </div>
+        </div>
+        <div class="slider-button">
+          <i class="fas fa-angle-left" id="prevBtn"></i>
+          <i class="fas fa-angle-right" id="nextBtn"></i>
+        </div>
+      </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>

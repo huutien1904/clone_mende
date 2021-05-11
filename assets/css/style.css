@@ -345,6 +345,9 @@ html {
 .menu_item:nth-child(2):hover .menu-item_list {
   display: block;
 }
+.expland {
+  display: block;
+}
 .menu-item_list {
   position: absolute;
   left: 0;
@@ -352,7 +355,9 @@ html {
   box-shadow: 0 1px 5px 2px rgb(0 0 0 / 10%);
   list-style: none;
   display: none;
-  transition: display ease-in-out 1s;
+  transition: display ease 0.5s;
+  z-index: 10000;
+  background-color: white;
 }
 .menu-item_link {
   padding: 1rem 1.4rem;
@@ -362,6 +367,56 @@ html {
   color: #666666;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+/* slider */
+
+.slider-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+}
+.slider img {
+  width: 100vw;
+}
+.slider-main {
+  position: relative;
+}
+.slider-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+.fa-angle-left {
+  font-size: 8rem;
+  color: white;
+  font-weight: 300;
+}
+.fa-angle-right {
+  font-size: 8rem;
+  color: white;
+}
+#prevBtn {
+  position: relative;
+  left: -70rem;
+  border-color: transparent;
+  background-color: transparent;
+  opacity: 0.8;
+}
+#nextBtn {
+  position: relative;
+  border-color: transparent;
+  background-color: transparent;
+  opacity: 0.8;
+  left: 62rem;
 }
 @keyframes modelPopup {
   from {
