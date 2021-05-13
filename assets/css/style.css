@@ -210,6 +210,17 @@ html {
 .link-cart {
   position: relative;
 }
+.count-product {
+  position: absolute;
+  right: 0;
+  top: -11px;
+  padding: 0.5rem;
+  background-color: #9d9191;
+  border-radius: 50%;
+  color: #fefdfd;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 .model-cart {
   width: 47rem;
   position: absolute;
@@ -418,6 +429,174 @@ html {
   opacity: 0.8;
   left: 62rem;
 }
+/* end slider */
+
+/* product sale */
+
+.product-sale {
+  margin-top: 6rem;
+}
+.product-sale_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sale-title_link {
+  font-size: 2rem;
+  font-weight: 400;
+  display: block;
+  padding: 1rem 2rem 2rem 2rem;
+  color: #000000;
+}
+.product-new_link {
+  color: #272727;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #272727;
+}
+.product-sale_list {
+  margin-top: 5.6rem;
+}
+.product-item_image img {
+  width: 37rem;
+  height: 37rem;
+  cursor: pointer;
+}
+.item-mage img {
+  width: 19rem;
+  height: 26rem;
+  cursor: pointer;
+  object-fit: cover;
+}
+.product-wrap {
+  display: flex;
+  padding: 0 15px;
+}
+.product-item-wrap {
+  margin-top: 3.8rem;
+}
+.item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-description_name {
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  max-height: 2rem;
+  overflow: hidden;
+  max-width: 15rem;
+  text-overflow: ellipsis;
+  margin-left: 0;
+  flex: 1;
+  padding-right: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  margin: 1rem 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+.item-description_price {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.newproduct-sale_wrap {
+  position: relative;
+  margin-top: 6rem;
+}
+.newproduct-sale_after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  /* display: none; */
+  transition: opacity ease-in-out 0.5s;
+}
+.newproduct-sale_wrap:hover .newproduct-sale_after {
+  opacity: 1;
+}
+.newproduct-sale_after {
+  height: 30rem;
+}
+.newproduct-sale_img img {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.newproduct-sale_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newproduct-sale_name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.newproduct-sale_price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.collection-highlight-list {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-around;
+}
+.c-4.flex-basic {
+  flex-basis: 0;
+}
+.collection-highlight_img {
+  transition: transform ease-in-out 3s;
+}
+.collection-highlight_img img {
+  border-radius: 2px;
+  width: 40rem;
+  height: 60rem;
+  object-fit: cover;
+}
+.collection-highlight_img:hover {
+  transform: scale(1.14);
+  cursor: pointer;
+}
+.collection-highlight_item {
+  position: relative;
+}
+.collection-highlight_img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(218, 212, 198);
+  opacity: 0;
+  transition: transform ease-in-out 3s;
+  transition: opacity ease-out 0.7s;
+}
+.collection-highlight_img::after {
+  content: "ARTWORK JACKET SET";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 58%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  padding: 4rem;
+  font-weight: 500;
+}
+.collection-highlight_img:hover::before {
+  opacity: 0.5;
+}
+
 @keyframes modelPopup {
   from {
     opacity: 0;

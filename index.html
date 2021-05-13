@@ -1,175 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
 
-    <title>Mende</title>
-  </head>
-  <body>
-    <div class="container">
-      <!-- header -->
-      <header class="header">
-        <div class="header_section">
-          <div class="header_logo">
-            <div class="logo">
-              <img
-                src="https://theme.hstatic.net/200000259513/1000660906/14/logo.png?v=382"
-                alt=""
-              />
-            </div>
-            <div class="list_section">
-              <!-- search -->
-              <i class="fas fa-search section_item search-link">
-                <div class="model-search model-item">
-                  <div class="model">
-                    <p>Tìm Kiếm</p>
-                    <div class="input-search">
-                      <input
-                        placeholder="tìm kiếm sản phẩm ..."
-                        type="text"
-                        name="search"
-                      />
-                      <i class="fas fa-search"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/grid.css">
+
+  <title>Mende</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- header -->
+    <header class="header">
+      <div class="header_section">
+        <div class="header_logo">
+          <div class="logo">
+            <img src="https://theme.hstatic.net/200000259513/1000660906/14/logo.png?v=382" alt="" />
+          </div>
+          <div class="list_section">
+            <!-- search -->
+            <i class="fas fa-search section_item search-link">
+              <div class="model-search model-item">
+                <div class="model">
+                  <p>Tìm Kiếm</p>
+                  <div class="input-search">
+                    <input placeholder="tìm kiếm sản phẩm ..." type="text" name="search" />
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+                <!-- <i class="fas fa-caret-up caret-up"></i> -->
+              </div>
+            </i>
+            <!-- end search -->
+
+            <!-- login -->
+            <i class="fas fa-user section_item link-login">
+              <div class="model-login model-item">
+                <div class="login-tile">
+                  <p class="model-login_title">ĐĂNG NHẬP TÀI KHOẢN</p>
+                  <p class="model-login_dis">
+                    Nhập email và mật khẩu của bạn
+                  </p>
+                </div>
+
+                <form action="" class="login">
+                  <input type="text" class="email_login" placeholder="Email" />
+                  <input type="text" class="password_login" placeholder="Mật Khẩu" />
+                </form>
+                <div class="policy">
+                  This site is protected by reCAPTCHA and the Google
+                  <a href="#">Privacy Policy</a> and
+                  <a href="#">Terms of Service</a> apply
+                </div>
+
+                <div class="button_login">
+                  <a href="" class="link_button">ĐĂNG NHẬP</a>
+                </div>
+                <div class="login_other">
+                  <p class="create-account">
+                    Khách hàng mới ? <a href=""> Tạo tài khoản</a>
+                  </p>
+                  <p class="forgot-password">
+                    Quên mật khẩu ?<a href=""> Khôi phục mật khẩu</a>
+                  </p>
+                </div>
+              </div>
+            </i>
+            <!-- end login -->
+
+            <!-- cart -->
+            <i class="fas fa-shopping-cart section_item link-cart">
+              <div class="count-product">
+                <span>0</span>
+              </div>
+              <div class="model-cart model-item">
+                <div class="cart-title">GIỎ HÀNG</div>
+
+                <div class="cart-product">
+                  <i class="fas fa-shopping-cart"></i>
+                  <p>Hiện chưa có sản phẩm</p>
+                </div>
+
+                <div class="total-money">
+                  <p>TỔNG TIỀN</p>
+                  <p>0đ</p>
+                </div>
+                <div class="cart-decription">
+                  <button class="check-cart">XEM GIỎ HÀNG</button>
+                  <button class="check-out-cart">THANH TOÁN</button>
+                </div>
+              </div>
+            </i>
+            <!-- end cart -->
+          </div>
+        </div>
+        <div class="section_primary">
+          <ul class="menu_option">
+            <li class="menu_item menu_item-active">
+              <a href="" class="menu_link">TRANG CHỦ | HOME </a>
+            </li>
+            <li class="menu_item">
+              <a href="" class="menu_link menu-show expland">BỘ SƯU TẬP | COLLECIONS
+                <i class="fas fa-angle-down menu_item-icon"></i>
+                <ul class="menu-item_list">
+                  <li class="menu-item_link"><a href="">SHIRT</a></li>
+                  <li class="menu-item_link"><a href="">TEE</a></li>
+                  <li class="menu-item_link"><a href="">JACKET</a></li>
+                  <li class="menu-item_link"><a href="">PANTS</a></li>
+                  <li class="menu-item_link">
+                    <a href="">BACKPACK | BAG</a>
+                  </li>
+                  <li class="menu-item_link"><a href="">SET BỘ</a></li>
+                  <li class="menu-item_link"><a href="">PHỤ KIỆN</a></li>
+                  <li class="menu-item_link"><a href="">SWEATER</a></li>
+                  <li class="menu-item_link"><a href="">HOODIE</a></li>
+                </ul>
+              </a>
+            </li>
+            <li class="menu_item">
+              <a href="" class="menu_link"> MENDE | ABOUT US</a>
+            </li>
+            <li class="menu_item">
+              <a href="" class="menu_link">CHÍNH SÁCH ĐỔI TRẢ </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- slider -->
+    <div class="slider-main">
+      <div class="slider-container">
+        <div class="slider">
+          <img src="./img/slideshow_3.jpg" alt="" id="lastclone" />
+          <img src="./img/slideshow_1.jpg" alt="" />
+          <img src="./img/slideshow_2.jpg" alt="" />
+          <img src="./img/slideshow_3.jpg" alt="" />
+          <img src="./img/slideshow_1.jpg" alt="" id="firstclone" />
+        </div>
+      </div>
+      <div class="slider-button">
+        <i class="fas fa-angle-left" id="prevBtn"></i>
+        <i class="fas fa-angle-right" id="nextBtn"></i>
+      </div>
+    </div>
+    <!-- end slider -->
+    <!-- product sale -->
+    <div class="product-sale">
+      <div class="product-sale_title">
+        <a href="" class="sale-title_link">QUICK SALE</a>
+        <a href="" class="product-new_link">Xem Thêm</a>
+      </div>
+
+      <div class="product-sale_list">
+        <div class="grid wide">
+          <div class="row ">
+            <div class="col l-6 ">
+              <div class="row product-wrap">
+                <div class="col l-8">
+                  <div class="product-item_image">
+                    <img
+                      src="./img/z2432051392953_0135945c6d3d4d43744d31b7bf85902f_51716377763f49bba6fba14432d384e1_grande.jpg"
+                      alt="" />
+                  </div>
+                </div>
+                <div class="col l-4">
+                  <div class="product-item-wrap">
+                    <div class="item-mage">
+                      <img src="./img/7535cc98-578b-4418-9611-f694db4c9c92_2f6fbc44af3d4000b5d6f1723d394891_grande.jpeg"
+                        alt="" />
+                    </div>
+                    <div class="item-description">
+                      <div class="item-description_name">
+                        MENDE SIGNATURE COLOR TEE - ĐỎ
+                      </div>
+                      <p class="item-description_price">320,000đ</p>
                     </div>
                   </div>
-                  <!-- <i class="fas fa-caret-up caret-up"></i> -->
                 </div>
-              </i>
-              <!-- end search -->
-
-              <!-- login -->
-              <i class="fas fa-user section_item link-login">
-                <div class="model-login model-item">
-                  <div class="login-tile">
-                    <p class="model-login_title">ĐĂNG NHẬP TÀI KHOẢN</p>
-                    <p class="model-login_dis">
-                      Nhập email và mật khẩu của bạn
-                    </p>
-                  </div>
-
-                  <form action="" class="login">
-                    <input
-                      type="text"
-                      class="email_login"
-                      placeholder="Email"
-                    />
-                    <input
-                      type="text"
-                      class="password_login"
-                      placeholder="Mật Khẩu"
-                    />
-                  </form>
-                  <div class="policy">
-                    This site is protected by reCAPTCHA and the Google
-                    <a href="#">Privacy Policy</a> and
-                    <a href="#">Terms of Service</a> apply
-                  </div>
-
-                  <div class="button_login">
-                    <a href="" class="link_button">ĐĂNG NHẬP</a>
-                  </div>
-                  <div class="login_other">
-                    <p class="create-account">
-                      Khách hàng mới ? <a href=""> Tạo tài khoản</a>
-                    </p>
-                    <p class="forgot-password">
-                      Quên mật khẩu ?<a href=""> Khôi phục mật khẩu</a>
-                    </p>
+              </div>
+            </div>
+            <div class="col l-6 ">
+              <div class="row product-wrap">
+                <div class="col l-8">
+                  <div class="product-item_image">
+                    <img
+                      src="./img/z2432060650523_8aacfee40de27e65a08cdd3dccd4d28e_b19a1546c11249d79592b68f06d4a943_grande.jpg"
+                      alt="" />
                   </div>
                 </div>
-              </i>
-              <!-- end login -->
-
-              <!-- cart -->
-              <i class="fas fa-shopping-cart section_item link-cart">
-                <div class="model-cart model-item">
-                  <div class="cart-title">GIỎ HÀNG</div>
-
-                  <div class="cart-product">
-                    <i class="fas fa-shopping-cart"></i>
-                    <p>Hiện chưa có sản phẩm</p>
-                  </div>
-
-                  <div class="total-money">
-                    <p>TỔNG TIỀN</p>
-                    <p>0đ</p>
-                  </div>
-                  <div class="cart-decription">
-                    <button class="check-cart">XEM GIỎ HÀNG</button>
-                    <button class="check-out-cart">THANH TOÁN</button>
+                <div class="col l-4">
+                  <div class="product-item-wrap">
+                    <div class="item-mage">
+                      <img src="./img/e82547ab-5d5b-4ebe-8cc4-d47ed49506e8_749664498b08422db602813487267c6b_grande.jpeg"
+                        alt="" />
+                    </div>
+                    <div class="item-description">
+                      <div class="item-description_name">
+                        MENDE SIGNATURE COLOR TEE - ĐỎ
+                      </div>
+                      <p class="item-description_price">320,000đ</p>
+                    </div>
                   </div>
                 </div>
-              </i>
-              <!-- end cart -->
+              </div>
             </div>
           </div>
-          <div class="section_primary">
-            <ul class="menu_option">
-              <li class="menu_item menu_item-active">
-                <a href="" class="menu_link">TRANG CHỦ | HOME </a>
-              </li>
-              <li class="menu_item">
-                <a href="" class="menu_link menu-show expland"
-                  >BỘ SƯU TẬP | COLLECIONS
-                  <i class="fas fa-angle-down menu_item-icon"></i>
-                  <ul class="menu-item_list">
-                    <li class="menu-item_link"><a href="">SHIRT</a></li>
-                    <li class="menu-item_link"><a href="">TEE</a></li>
-                    <li class="menu-item_link"><a href="">JACKET</a></li>
-                    <li class="menu-item_link"><a href="">PANTS</a></li>
-                    <li class="menu-item_link">
-                      <a href="">BACKPACK | BAG</a>
-                    </li>
-                    <li class="menu-item_link"><a href="">SET BỘ</a></li>
-                    <li class="menu-item_link"><a href="">PHỤ KIỆN</a></li>
-                    <li class="menu-item_link"><a href="">SWEATER</a></li>
-                    <li class="menu-item_link"><a href="">HOODIE</a></li>
-                  </ul>
-                </a>
-              </li>
-              <li class="menu_item">
-                <a href="" class="menu_link"> MENDE | ABOUT US</a>
-              </li>
-              <li class="menu_item">
-                <a href="" class="menu_link">CHÍNH SÁCH ĐỔI TRẢ </a>
-              </li>
-            </ul>
+
+          <div class="row">
+            <div class="col l-3">
+              <div class="newproduct-sale_wrap">
+                <div class="newproduct-sale_img"><img
+                    src="./img/4-te9005-1-none_8ff025dd288c4cdeb474392c086e1192_grande.jpg" alt=""></div>
+                <div class="newproduct-sale_description">
+                  <p class="newproduct-sale_name">Anubis Shirt</p>
+                  <p class="newproduct-sale_price">350,000đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-3">
+              <div class="newproduct-sale_wrap">
+                <div class="newproduct-sale_img">
+                  <img class="newproduct-sale_before"
+                    src="http://product.hstatic.net/200000259513/product/6-te9005-1-none_c3a2ac90241049d8988a8b3c2109b102_master.jpg"
+                    alt="">
+                  <img class="newproduct-sale_after"
+                    src="./img/a9e741aa-12e1-4a06-8410-347ce42d1210_d12032974ee9451cad5384127ae1bf26_master.jpeg"
+                    alt="">
+                </div>
+                <div class="newproduct-sale_description">
+                  <p class="newproduct-sale_name">DNTrump shirt
+                  </p>
+                  <p class="newproduct-sale_price">380,000đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-3">
+              <div class="newproduct-sale_wrap">
+                <div class="newproduct-sale_img">
+                  <img class="newproduct-sale_before"
+                    src="http://product.hstatic.net/200000259513/product/holo_9795bc55a84a427b8c45716448c9ed3c_master.jpg"
+                    alt="">
+                  <img class="newproduct-sale_after" src="./img/holo_den_1cf07c2da03a45b783362ea9907d9c25_master.jpg"
+                    alt="">
+                </div>
+                <div class="newproduct-sale_description">
+                  <p class="newproduct-sale_name">HOLO MINIBAG ĐEN</p>
+                  <p class="newproduct-sale_price">280,000đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-3">
+              <div class="newproduct-sale_wrap">
+                <div class="newproduct-sale_img">
+                  <img class="newproduct-sale_before"
+                    src="http://product.hstatic.net/200000259513/product/74f1ef70-5caa-48ac-a066-4873c0d736b4_594772cc4f6343a7b63b43ef95d0fc02_master.jpeg"
+                    alt="">
+                  <img class="newproduct-sale_after" src="./img/e41a9327_1_0384c2eb2c0b4cb0b216b67336876093_master.jpg"
+                    alt="">
+                </div>
+                <div class="newproduct-sale_description">
+                  <p class="newproduct-sale_name">MENDE ASIAN LION SHIRT</p>
+                  <p class="newproduct-sale_price">380,000đ</p>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
-      </header>
-      <!-- end header -->
-      <!-- slider -->
-      <div class="slider-main">
-        <div class="slider-container">
-          <div class="slider">
-            <img src="./img/slideshow_3.jpg" alt="" id="lastclone" />
-            <img src="./img/slideshow_1.jpg" alt="" />
-            <img src="./img/slideshow_2.jpg" alt="" />
-            <img src="./img/slideshow_3.jpg" alt="" />
-            <img src="./img/slideshow_1.jpg" alt="" id="firstclone" />
+
+        <div class="grid">
+          <div class=" collection-highlight-list">
+            <div class="c-4 flex-basic ">
+              <div class="collection-highlight_item">
+                  <div class="collection-highlight_img">
+                    <img src="http://theme.hstatic.net/200000259513/1000660906/14/block_home_category1_large.jpg?v=384" alt="">
+                  </div>
+                  <div class="overlay"></div>
+              </div>
+            </div>
+            <div class="c-4 flex-basic">
+              <div class="collection-highlight_item">
+                  <div class="collection-highlight_img">
+                    <img src="http://theme.hstatic.net/200000259513/1000660906/14/block_home_category1_large.jpg?v=384" alt="">
+                  </div>
+              </div>
+            </div>
+            <div class="c-4 flex-basic">
+              <div class="collection-highlight_item">
+                  <div class="collection-highlight_img">
+                    <img src="http://theme.hstatic.net/200000259513/1000660906/14/block_home_category1_large.jpg?v=384" alt="">
+                  </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="slider-button">
-          <i class="fas fa-angle-left" id="prevBtn"></i>
-          <i class="fas fa-angle-right" id="nextBtn"></i>
+          
         </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./assets/js/index.js"></script>
-  </body>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</body>
+
 </html>
